@@ -51,7 +51,8 @@
 #include "lib/encap.h"
 
 #ifdef HAVE_LRU_MAP_TYPE
-#define CT_MAP_TYPE BPF_MAP_TYPE_LRU_HASH
+#define CT_MAP_TYPE BPF_MAP_TYPE_HASH
+//#define CT_MAP_TYPE BPF_MAP_TYPE_LRU_HASH
 #else
 #define CT_MAP_TYPE BPF_MAP_TYPE_HASH
 #endif
